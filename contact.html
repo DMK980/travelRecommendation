@@ -20,13 +20,6 @@
             <a id='About'href='./about.html'>About</a>
             <a id='Contact'href='contact.html'>Contact Us</a>
         </nav>
-        <!-- search bar -->
-        <search id="searchBar">
-            <input type='text'placeholder='Enter a destination or keyword'>
-            <img id='searchIcon'src='./search_icon.svg'alt=''>
-            <button class='buttons'id='searchBtn'>Search</button>
-            <button class='buttons'id='clearBtn'>clear</button>
-        </search>
     </header>
     <aside>
         <a id='twitter'href='twitter.com'><img src='./twitter_icon.svg'alt='twitter icon'></a>
@@ -36,17 +29,27 @@
     </aside>
     <main>
         <section>
-            <h1 id='Heading'>Explore Dream Destination</h1>
-            <p id='description'>
-                it encourages exploration of unfamiliar territories,
-                embracing diverse cultures and landscapes,while 
-                pursuing the desired destination that captivates the 
-                heart and ignites a sense of wonder.
-            </p>
-            <button class='buttons'id='bookBtn'>Book Now</button>
+            <h1 id='heading'>CONTACT US<h1>
+            <small>Get in touch</small>
         </section>
         <section>
-            <!-- this is where the destinations will go -->
+            <!-- contact form -->
+            <form>
+                <!-- name -->
+                <label for='name'>Name</label>
+                <input type='text'placeholder='Enter your name'>
+
+                <!-- email -->
+                <label for='email'>Email</label>
+                <input type='email'placeholder='Enter your email'>
+
+                <!-- message -->
+                <label for='message'>Message</label>
+                <textfield rows='5'placeholder='Enter your message'name='message'></textfield>
+
+                <!-- submitbtn -->
+                <button type="submit"class='buttons'id='submitBtn'>Submit</button>
+            </form>
         </section>
     </main>
     <script src='travel_recommendation.js'></script>
