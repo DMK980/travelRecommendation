@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Recommendations</title>
-    <link rel="Stylesheet"href='./css/stylesheet.css'>
+    <link rel="stylesheet"href='./css/stylesheet.css'>
+    <link rel="stylesheet"href='./css/homepage.css'>
+    
 </head>
 <body>
     <!-- Header section -->
@@ -20,6 +22,17 @@
             <a class='navLinks'id='About'href='./about.html'>About</a>
             <a class='navLinks'id='Contact'href='contact.html'>Contact Us</a>
         </nav>
+        <!-- search bar -->
+        <search id="searchBar">
+            <div class="inputIconContainer">
+                <input name='search'type='text'placeholder='Enter a destination or keyword'>
+                <img id='searchIcon'src='./assets/icons/search_icon.svg'alt=''>
+            </div>
+            <div class="buttonContainer">
+                <button class='buttons'id='searchBtn'>Search</button>
+                <button class='buttons'id='clearBtn'>clear</button>
+            </div>
+        </search>
     </header>
     <main>
         <aside>
@@ -29,29 +42,19 @@
             <a id='instagram'href='https://www.instagram.com'target='blank'><img class='socialLinks'src='./assets/icons/instagram_icon.svg'alt='instagram icon'></a>
             <a id='youtube'href='https://www.youtube.com'target='blank'><img class='socialLinks'src='./assets/icons/youtube_icon.svg'alt='youtube icon'></a>
         </aside>
-        <section class="contactPageSection">
+        <section class="homePageContent">
             <section>
-                <h1 id='heading'>CONTACT US<h1>
-                <small>Get in touch</small>
+                <h1 id='Heading'>EXPLORE DREAM DESTINATION</h1>
+                <p id='description'>
+                    it encourages exploration of unfamiliar territories,
+                    embracing diverse cultures and landscapes,while 
+                    pursuing the desired destination that captivates the 
+                    heart and ignites a sense of wonder.
+                </p>
+                <button class='buttons'id='bookBtn'>Book Now</button>
             </section>
             <section>
-                <!-- contact form -->
-                <form>
-                    <!-- name -->
-                    <label for='name'>Name</label>
-                    <input type='text'placeholder='Enter your name'>
-    
-                    <!-- email -->
-                    <label for='email'>Email</label>
-                    <input type='email'placeholder='Enter your email'>
-    
-                    <!-- message -->
-                    <label for='message'>Message</label>
-                    <textfield rows='5'placeholder='Enter your message'name='message'></textfield>
-    
-                    <!-- submitbtn -->
-                    <button type="submit"class='buttons'id='submitBtn'>Submit</button>
-                </form>
+                <!-- this is where the destinations will go -->
             </section>
         </section>
     </main>

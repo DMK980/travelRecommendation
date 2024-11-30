@@ -1,0 +1,12 @@
+/* MAIN SECTION */
+.homePageContent{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+    padding-left: clamp(0.25rem,5vw,2.5rem);
+}
+#Heading{
+    font-size: clamp(1rem,10vw,7rem);
+    max-width: 550px;
+    opacity: 0.75;
+}
