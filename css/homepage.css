@@ -1,12 +1,73 @@
 /* MAIN SECTION */
 .homePageContent{
     display: flex;
-    flex-direction: column;
     padding-top: 10rem;
     padding-left: clamp(0.25rem,5vw,2.5rem);
+    padding-right:1rem;
+    gap:5rem;
 }
 #Heading{
     font-size: clamp(1rem,10vw,7rem);
     max-width: 550px;
+    min-width:fit-content;
     opacity: 0.75;
+}
+#description{
+    max-width: 450px;
+    font-size: clamp(1rem,5vw,1.25rem);
+    padding: 3rem 0 1.5rem 0;
+}
+#bookBtn{
+    font-size: 1.5rem;
+    background-color:#003440;
+    padding: 1rem 2rem;
+}
+#bookBtn:hover{
+    background-color: #79DAE8;
+    color: var(--secondary-color2);
+}
+/* results */
+.destinationHeading{
+    padding: 1rem 0 1rem 0;
+    font-weight: 900;
+    color:#E8F9FD;
+    font-size: 2rem;
+}
+#results{
+    max-width: 700px;
+    color: #1A1A1D;
+    /* overflow-y: scroll; */
+}
+#results::-webkit-scrollbar{
+    display: none;
+}
+.recContainer{
+    list-style: none;
+    margin-bottom: 2rem;
+}
+.recPic{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+.recDescript{
+    background-color: #E8F9FD;
+    padding: 2rem 1rem;
+    border-radius: 0 0 20px 20px;
+}
+.recDescripText{
+    padding-top: 1rem;
+}
+@media (min-width:1367px) {
+    #results{
+        overflow-y: scroll;
+    } 
+}
+@media (max-width:1367px) {
+    .homePageContent{
+        flex-direction: column;
+    }
+    #results{
+        max-width: 700px;
+        color: #1A1A1D;
+    } 
 }

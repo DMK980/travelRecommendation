@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendations</title>
+    <link rel="Stylesheet"href='../css/stylesheet.css'>
+    <link rel="Stylesheet"href='../css/contact.css'>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- logo -->
+        <div id='logoContainer'>
+            <img id='logo'src='../assets/icons/plane_ticket_icon.svg'alt='CompanyLogo'>
+            <h1 id='companyName'>TravelBloom</h1>
+        </div>
+        <!-- navigation -->
+        <nav id='navigation'>
+            <a class='navLinks'id='Home'href='../index.html'>Home</a>
+            <a class='navLinks'id='About'href='./about.html'>About</a>
+            <a class='navLinks'id='Contact'href='./contact.html'>Contact Us</a>
+        </nav>
+        <!-- search bar -->
+        <search id="searchBar">
+            <div class="inputIconContainer">
+                <input name='search'type='text'placeholder='Enter a destination or keyword'>
+                <img id='searchIcon'src='../assets/icons/search_icon.svg'alt=''>
+            </div>
+            <div class="buttonContainer">
+                <button class='buttons'id='searchBtn'>Search</button>
+                <button class='buttons'id='clearBtn'>clear</button>
+            </div>
+        </search>
+    </header>
+    <main>
+        <aside>
+            <div class="decoration"></div>
+            <a id='twitter'href='https://www.x.com'target='blank'><img class='socialLinks' src='../assets/icons/twitter_icon.svg'alt='twitter icon'></a>
+            <a id='facebook'href='https://www.facebook.com'target='blank'><img class='socialLinks'src='../assets/icons/facebook_icon.svg'alt='facebook icon'></a>
+            <a id='instagram'href='https://www.instagram.com'target='blank'><img class='socialLinks'src='../assets/icons/instagram_icon.svg'alt='instagram icon'></a>
+            <a id='youtube'href='https://www.youtube.com'target='blank'><img class='socialLinks'src='../assets/icons/youtube_icon.svg'alt='youtube icon'></a>
+        </aside>
+        <section class="contactPageSection">
+            <section class="contactUstext">
+                <h1 id='heading'>CONTACT US<h1>
+                <p class="description">Get in touch</p>
+            </section>
+            <section class="contactUsform">
+                <!-- contact form -->
+                <form>
+                    <!-- name -->
+                    <label for='name'>Name</label>
+                    <input type='text'placeholder='Enter your name'>
+    
+                    <!-- email -->
+                    <label for='email'>Email</label>
+                    <input type='email'placeholder='Enter your email'>
+    
+                    <!-- message -->
+                    <label for='message'>Message</label>
+                    <textarea rows='5'placeholder='Enter your message'name='message'></textarea>
+    
+                    <!-- submitbtn -->
+                    <button type="submit"class='buttons'id='submitBtn'>Submit</button>
+                </form>
+            </section>
+        </section>
+    </main>
+    <!-- <script src='../script.js'></script> -->
+</body>
+</html>

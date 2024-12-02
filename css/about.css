@@ -1,0 +1,109 @@
+#searchBar{
+    visibility:hidden;
+}
+@media (max-width:934px) {
+    #searchBar{
+        display: none;
+    }   
+}
+/* about section */
+
+.aboutPageContent{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 6rem 0rem 0rem;
+    gap:2rem;
+}
+#heading{
+    font-size: clamp(1rem,10vw,5rem);
+    min-width:fit-content;
+    opacity: 0.75;
+}
+#description{
+    font-size: 1.35rem;
+    color:rgba(232, 249, 253, 0.8);
+    background-color: rgba(26, 26, 29, 0.21);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    padding: 1.75rem 1.5rem;
+    line-height: 30px;
+    line-break:strict;
+    font-family:Arial, Helvetica, sans-serif;
+}
+strong{
+    color: #003440;
+}
+
+/* our team */
+.ourTeamContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding:3rem 0.5rem 0.5rem 0.5rem;
+    width: fit-content;
+    align-self: end;
+    flex-wrap: wrap;
+
+}
+#secondaryHeading{
+    font-size: clamp(1rem,10vw,4rem);
+    max-width:200px;
+    opacity: 0.75;
+}
+#teamCard{
+    display: grid;
+    color:rgba(232, 249, 253, 0.8);
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: rgba(26, 26, 29, 0.21);
+    backdrop-filter: blur(1px);
+    border-radius: 15px;
+    padding: 2rem 2rem;
+}
+.profile_container{
+    display: flex;
+    align-items: start;
+    grid-column: 1/2;
+    grid-row:1/2;
+    padding: 0rem 1rem 0.25rem 0rem;
+}
+#teamMemberName{
+    align-self: end;
+    grid-column: 2/3;
+    grid-row:1/2;
+    font-size: 20px;
+}
+#teamMemberDuties{
+    align-self:center;
+    max-width: 170px;
+    grid-column: 2/3;
+    grid-row:2/3;
+    padding: 0.5rem 0;
+}
+#teamMemberPosition{
+    grid-column: 2/3;
+    grid-row:3/4;
+    align-self: center;
+    text-align: center;
+    padding: 0.5rem;
+    border: 1px solid #E8F9FD;
+    border-radius: 25px;
+    background-color: #176B87;
+}
+
+img[alt='person Icon']{
+    width: 30px;
+}
+@media (max-width:420px) {
+    #description{
+        font-size: 1rem;
+    }
+    .aboutPageContent{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1rem 0rem 0rem;
+        gap:2rem;
+    }
+    
+}

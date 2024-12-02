@@ -6,7 +6,6 @@
     <title>Travel Recommendations</title>
     <link rel="stylesheet"href='./css/stylesheet.css'>
     <link rel="stylesheet"href='./css/homepage.css'>
-    
 </head>
 <body>
     <!-- Header section -->
@@ -19,8 +18,8 @@
         <!-- navigation -->
         <nav id='navigation'>
             <a class='navLinks'id='Home'href='./index.html'>Home</a>
-            <a class='navLinks'id='About'href='./about.html'>About</a>
-            <a class='navLinks'id='Contact'href='contact.html'>Contact Us</a>
+            <a class='navLinks'id='About'href='./html/about.html'>About</a>
+            <a class='navLinks'id='Contact'href='./html/contact.html'>Contact Us</a>
         </nav>
         <!-- search bar -->
         <search id="searchBar">
@@ -43,7 +42,7 @@
             <a id='youtube'href='https://www.youtube.com'target='blank'><img class='socialLinks'src='./assets/icons/youtube_icon.svg'alt='youtube icon'></a>
         </aside>
         <section class="homePageContent">
-            <section>
+            <section id="textContent">
                 <h1 id='Heading'>EXPLORE DREAM DESTINATION</h1>
                 <p id='description'>
                     it encourages exploration of unfamiliar territories,
@@ -51,13 +50,13 @@
                     pursuing the desired destination that captivates the 
                     heart and ignites a sense of wonder.
                 </p>
-                <button class='buttons'id='bookBtn'>Book Now</button>
             </section>
-            <section>
+            <ul id="results">
+                <h2 class="destinationHeading"style='visibility:hidden'>Destinations</h2>
                 <!-- this is where the destinations will go -->
-            </section>
+            </ul>
         </section>
     </main>
-    <script src='travel_recommendation.js'></script>
+    <script src='script.js'></script>
 </body>
 </html>
